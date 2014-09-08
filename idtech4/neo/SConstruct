@@ -272,13 +272,12 @@ if ( g_os == 'Linux' ):
 
 if ( TARGET_ANDROID == '1' ):
 	BASECPPFLAGS.append( '-D__ANDROID__')
-	BASECPPFLAGS.append( '-I/home/martins/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.6/include')
-	BASECPPFLAGS.append( '-I/home/martins/src/libogg-1.3.2/include')
-	BASECPPFLAGS.append( '-I/home/martins/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.6/libs/armeabi-v7a/include')
-	BASECPPFLAGS.append( '-I/home/martins/android-ndk-r9d/platforms/android-9/arch-arm/usr/include')
-	BASELINKFLAGS.append( '-L/home/martins/src/libogg-1.3.2/lib')
-	BASELINKFLAGS.append( '-L/home/martins/android-ndk-r9d/platforms/android-9/arch-arm/usr/lib')
-	BASELINKFLAGS.append( '-I/home/martins/android-ndk-r9d/platforms/android-9/arch-arm/usr/lib')
+	BASECPPFLAGS.append( '-I/home/martins/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include')
+	BASECPPFLAGS.append( '-I/home/martins/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include')
+	BASECPPFLAGS.append( '-I/opt/android-toolchain/sysroot/usr/include')
+	BASELINKFLAGS.append( '-L/home/martins/src/libvorbis-libogg-android/libs/armeabi-v7a')
+	BASELINKFLAGS.append( '-L/home/martins/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a')
+	BASELINKFLAGS.append( '-L/opt/android-toolchain/sysroot/usr/lib')
 
 	g_os = 'Android'
 

@@ -339,7 +339,7 @@ if g_os == 'Android':
 	local_env['CPPFLAGS' ] += [ '-I../jpeg-8d/' ]
 
 if g_os == 'Android':
-	local_env.Append( LIBS = [ 'dl', 'vorbisfile','vorbis', 'ogg', 'android' ] )
+	local_env.Append( LIBS = [ 'dl', 'vorbisfile','vorbis', 'ogg', 'android', 'gnustl_static' ] )
 else:
 	local_env.Append( LIBS = [ 'pthread', 'dl', 'vorbisfile', 'jpeg' ] )
 
@@ -350,7 +350,7 @@ if ( local_dedicated == 0 ):
 		local_env.Append( LIBS = [ 'openal' ] )
 	if ( local_opengl == 0 ):
 		local_env.Append( LIBS = [ 'GLESv2', 'EGL' ] )
-		local_env.Append( LIBPATH = ['/prog/games/dante-es2/libogg/lib'] )
+		local_env.Append( LIBPATH = ['/home/martins/src/libvorbis-libogg-android/libs/armeabi-v7a'] )
 	else:
 		local_env.Append( LIBS = [ 'GL' ] )
 
