@@ -1,0 +1,8 @@
+*.so
+*.o
+*.os
+*.pyc
+*.swp
+*.dblite
+neo/build
+neo/doom.arm
