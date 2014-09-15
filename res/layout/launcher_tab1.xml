@@ -77,15 +77,6 @@
         android:layout_height="wrap_content"
         android:onClick="support"
         android:text="Support the developer" />  
-        
     </LinearLayout>
-	<RelativeLayout
-    	android:layout_width="match_parent"
-    	android:layout_height="wrap_content"
-    	android:orientation="vertical"
-    	android:layout_below="@id/lay_tab1"
-    	android:layout_alignParentBottom="true">
-    	<include layout="@layout/adlayout"/>   
-    	</RelativeLayout> 
 </RelativeLayout>
 </ScrollView>

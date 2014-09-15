@@ -69,7 +69,7 @@ import android.widget.TabHost.TabContentFactory;
 
 public class GameLauncher extends Activity{		
 	
-	final String default_gamedata="/sdcard/diii4a";
+	final String default_gamedata="/sdcard/.doom3";
 	
 	final int UI_JOYSTICK=0;
 	final int UI_SHOOT=1;
@@ -278,7 +278,6 @@ public class GameLauncher extends Activity{
 	
 	@Override
 	public void onConfigurationChanged(Configuration newConfig) {
-		Q3EUtils.LoadAds(this);
 		super.onConfigurationChanged(newConfig);
 	}
 	
@@ -429,8 +428,6 @@ public class GameLauncher extends Activity{
 			}
 		});
 		updatehacktings();
-		
-		Q3EUtils.LoadAds(this);
 	}
 	
 	public void start(View vw)
