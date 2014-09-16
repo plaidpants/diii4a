@@ -278,6 +278,7 @@ if ( TARGET_ANDROID == '1' ):
 	BASELINKFLAGS.append( '-L/home/martins/src/libvorbis-libogg-android/libs/armeabi-v7a')
 	BASELINKFLAGS.append( '-L/home/martins/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a')
 	BASELINKFLAGS.append( '-L/opt/android-toolchain/sysroot/usr/lib')
+	BASELINKFLAGS.append( '-fuse-ld=bfd')
 
 	g_os = 'Android'
 
