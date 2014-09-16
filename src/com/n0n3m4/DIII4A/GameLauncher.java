@@ -67,9 +67,9 @@ import android.widget.RadioGroup;
 import android.widget.TabHost;
 import android.widget.TabHost.TabContentFactory;
 
-public class GameLauncher extends Activity{		
+public class GameLauncher extends Activity{
 	
-	final String default_gamedata="/sdcard/.doom3";
+	final String default_gamedata="/sdcard/diii4a";
 	
 	final int UI_JOYSTICK=0;
 	final int UI_SHOOT=1;
